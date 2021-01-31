@@ -1,0 +1,51 @@
+.board{
+    max-width: 90vh;
+    margin: auto;
+    padding: 10px;
+}
+
+.r{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+}
+
+.black-box {
+    background-image: url("/src/assets/images/backb.png");
+    background-size: cover;
+  }
+
+.white-box {
+    background-image: url("/src/assets/images/backw.png");
+    background-size: cover;
+  }
+
+.black-box:hover, .white-box:hover{
+    outline: 1px solid rgb(119, 63, 30);
+    outline-offset: -1px;
+}
+
+.selected{
+  outline: 2px solid rgb(119, 63, 30);
+    outline-offset: -2px;
+}
+
+.can_move{
+  outline: 4px solid rgba(119, 63, 30, 0.3);
+  outline-offset: -4px;
+}
+
+.can_move:hover{
+  outline: 4px solid rgba(119, 63, 30, 0.6);
+  outline-offset: -4px;
+}
+
+.from{
+  outline: 2px solid rgba(233, 195, 164, 0.377);
+  outline-offset: -20px;
+  
+}
+
+.to{
+  outline: 2px solid rgba(233, 195, 164, 0.377);
+  outline-offset: -5px;
+}

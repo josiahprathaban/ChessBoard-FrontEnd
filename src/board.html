@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChessBoard</title>
+    <link href="/src/board.css" rel="stylesheet">
+    <link href="/lib/bootstrap-5.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="/lib/bootstrap-5.0.0/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="/lib/jquery-3.5.1/jquery-3.5.1.min.js"></script>
+    <script src="/src/board.js"></script>
+</head>
+<body>
+    <div class="board">
+        <div class=" r">
+          <div class="col p-1 "><img width="100%" src="/src/assets/images/letters/8.png"/></div>
+          <div class="col p-1 black-box" id="a8"><img width="100%" src="/src/assets/images/brown/rb-1.png" id="br" class="clickable"/></div>
+          <div class="col p-1 white-box" id="b8"><img width="100%" src="/src/assets/images/brown/hb-1.png" id="bh" class="clickable"/></div>
+          <div class="col p-1 black-box" id="c8"><img width="100%" src="/src/assets/images/brown/bb-1.png" id="bb" class="clickable"/></div>
+          <div class="col p-1 white-box" id="d8"><img width="100%" src="/src/assets/images/brown/kb.png" id="bk" class="clickable"/></div>
+          <div class="col p-1 black-box" id="e8"><img width="100%" src="/src/assets/images/brown/qb.png" id="bq" class="clickable"/></div>
+          <div class="col p-1 white-box" id="f8"><img width="100%" src="/src/assets/images/brown/bb-2.png" id="bb" class="clickable"/></div>
+          <div class="col p-1 black-box" id="g8"><img width="100%" src="/src/assets/images/brown/hb-2.png" id="bh" class="clickable"/></div>
+          <div class="col p-1 white-box" id="h8"><img width="100%" src="/src/assets/images/brown/rb-2.png" id="br" class="clickable"/></div>
+
+          <div class="col p-1 "><img width="100%" src="/src/assets/images/letters/7.png"/></div>
+            <div class="col p-1 white-box" id="a7"><img width="100%" src="/src/assets/images/brown/pb.png" id="bp1" class="clickable"/></div>
+            <div class="col p-1 black-box" id="b7"><img width="100%" src="/src/assets/images/brown/pb.png" id="bp2" class="clickable"/></div>
+            <div class="col p-1 white-box" id="c7"><img width="100%" src="/src/assets/images/brown/pb.png" id="bp3" class="clickable"/></div>
+            <div class="col p-1 black-box" id="d7"><img width="100%" src="/src/assets/images/brown/pb.png" id="bp4" class="clickable"/></div>
+            <div class="col p-1 white-box" id="e7"><img width="100%" src="/src/assets/images/brown/pb.png" id="bp5" class="clickable"/></div>
+            <div class="col p-1 black-box" id="f7"><img width="100%" src="/src/assets/images/brown/pb.png" id="bp6" class="clickable"/></div>
+            <div class="col p-1 white-box" id="g7"><img width="100%" src="/src/assets/images/brown/pb.png" id="bp7" class="clickable"/></div>
+            <div class="col p-1 black-box" id="h7"><img width="100%" src="/src/assets/images/brown/pb.png" id="bp8" class="clickable"/></div>
+
+            <div class="col p-1 "><img width="100%" src="/src/assets/images/letters/6.png"/></div>
+            <div class="col p-1 black-box" id="a6"> </div>
+            <div class="col p-1 white-box" id="b6"> </div>
+            <div class="col p-1 black-box" id="c6"> </div>
+            <div class="col p-1 white-box" id="d6"> </div>
+            <div class="col p-1 black-box" id="e6"> </div>
+            <div class="col p-1 white-box" id="f6"> </div>
+            <div class="col p-1 black-box" id="g6"> </div>
+            <div class="col p-1 white-box" id="h6"> </div>
+          
+            <div class="col p-1 "><img width="100%" src="/src/assets/images/letters/5.png"/></div>
+            <div class="col p-1 white-box" id="a5"> </div>
+            <div class="col p-1 black-box" id="b5"> </div>
+            <div class="col p-1 white-box" id="c5"> </div>
+            <div class="col p-1 black-box" id="d5"> </div>
+            <div class="col p-1 white-box" id="e5"> </div>
+            <div class="col p-1 black-box" id="f5"> </div>
+            <div class="col p-1 white-box" id="g5"> </div>
+            <div class="col p-1 black-box" id="h5"> </div>
+          
+            <div class="col p-1 "><img width="100%" src="/src/assets/images/letters/4.png"/></div>
+            <div class="col p-1 black-box" id="a4"> </div>
+            <div class="col p-1 white-box" id="b4"> </div>
+            <div class="col p-1 black-box" id="c4"> </div>
+            <div class="col p-1 white-box" id="d4"> </div>
+            <div class="col p-1 black-box" id="e4"> </div>
+            <div class="col p-1 white-box" id="f4"> </div>
+            <div class="col p-1 black-box" id="g4"> </div>
+            <div class="col p-1 white-box" id="h4"> </div>
+          
+            <div class="col p-1 "><img width="100%" src="/src/assets/images/letters/3.png"/></div>
+            <div class="col p-1 white-box" id="a3"> </div>
+            <div class="col p-1 black-box" id="b3"> </div>
+            <div class="col p-1 white-box" id="c3"> </div>
+            <div class="col p-1 black-box" id="d3"> </div>
+            <div class="col p-1 white-box" id="e3"> </div>
+            <div class="col p-1 black-box" id="f3"> </div>
+            <div class="col p-1 white-box" id="g3"> </div>
+            <div class="col p-1 black-box" id="h3"> </div>
+         
+            <div class="col p-1 "><img width="100%" src="/src/assets/images/letters/2.png"/></div>
+            <div class="col p-1 black-box" id="a2"><img width="100%" src="/src/assets/images/white/pw.png"/></div>
+            <div class="col p-1 white-box" id="b2"><img width="100%" src="/src/assets/images/white/pw.png"/></div>
+            <div class="col p-1 black-box" id="c2"><img width="100%" src="/src/assets/images/white/pw.png"/></div>
+            <div class="col p-1 white-box" id="d2"><img width="100%" src="/src/assets/images/white/pw.png"/></div>
+            <div class="col p-1 black-box" id="e2"><img width="100%" src="/src/assets/images/white/pw.png"/></div>
+            <div class="col p-1 white-box" id="f2"><img width="100%" src="/src/assets/images/white/pw.png"/></div>
+            <div class="col p-1 black-box" id="g2"><img width="100%" src="/src/assets/images/white/pw.png"/></div>
+            <div class="col p-1 white-box" id="h2"><img width="100%" src="/src/assets/images/white/pw.png"/></div>
+        
+            <div class="col p-1 "><img width="100%" src="/src/assets/images/letters/1.png"/></div>
+            <div class="col p-1 white-box" id="a1"><img width="100%" src="/src/assets/images/white/rw-1.png"/></div>
+            <div class="col p-1 black-box" id="b1"><img width="100%" src="/src/assets/images/white/hw-1.png"/></div>
+            <div class="col p-1 white-box" id="c1"><img width="100%" src="/src/assets/images/white/bw-1.png"/></div>
+            <div class="col p-1 black-box" id="d1"><img width="100%" src="/src/assets/images/white/kw.png"/></div>
+            <div class="col p-1 white-box" id="e1"><img width="100%" src="/src/assets/images/white/qw.png"/></div>
+            <div class="col p-1 black-box" id="f1"><img width="100%" src="/src/assets/images/white/bw-2.png"/></div>
+            <div class="col p-1 white-box" id="g1"><img width="100%" src="/src/assets/images/white/hw-2.png"/></div>
+            <div class="col p-1 black-box" id="h1"><img width="100%" src="/src/assets/images/white/rw-2.png"/></div>
+
+            <div></div>
+          <div class="col p-1 "><img width="100%" src="/src/assets/images/letters/a.png"/></div>
+          <div class="col p-1 "><img width="100%" src="/src/assets/images/letters/b.png"/></div>
+          <div class="col p-1 "><img width="100%" src="/src/assets/images/letters/c.png"/></div>
+          <div class="col p-1 "><img width="100%" src="/src/assets/images/letters/d.png"/></div>
+          <div class="col p-1 "><img width="100%" src="/src/assets/images/letters/e.png"/></div>
+          <div class="col p-1 "><img width="100%" src="/src/assets/images/letters/f.png"/></div>
+          <div class="col p-1 "><img width="100%" src="/src/assets/images/letters/g.png"/></div>
+          <div class="col p-1 "><img width="100%" src="/src/assets/images/letters/h.png"/></div>
+          </div>
+      </div>
+</body>
+
+<script>
+  $(".clickable").click(function(){
+    $(this).parent().siblings().removeClass("selected can_move from to");
+    var $coin=$(this).attr('id')
+    var $box=$(this).parent().attr('id')
+    
+    $("#"+$box).addClass("selected");
+    if($box==="a7"){
+      $("#a6").addClass("can_move");
+      $("#a5").addClass("can_move");
+      $("#a6").click(function(){
+       var $w = $("#"+$coin).clone();
+       $("#"+$coin).parent().removeClass("selected");
+       $("#"+$coin).parent().addClass("from");
+       $("#"+$coin).remove();
+       $(this).append($w);
+       $(this).removeClass("can_move");
+       $(this).addClass("to");
+       $coin=null;
+      });
+      $("#a5").click(function(){
+       var $w = $("#"+$coin).clone();
+       $("#"+$coin).parent().removeClass("selected");
+       $("#"+$coin).parent().addClass("from");
+       $("#"+$coin).remove();
+       $(this).append($w);
+       $(this).removeClass("can_move");
+       $(this).addClass("to");
+       $coin=null;
+      });
+    }else if($box==="b7"){
+      $("#b6").addClass("can_move");
+      $("#b5").addClass("can_move");
+      $("#b6").click(function(){
+       var $w = $("#"+$coin).clone();
+       $("#"+$coin).parent().removeClass("selected");
+       $("#"+$coin).parent().addClass("from");
+       $("#"+$coin).remove();
+       $(this).append($w);
+       $(this).removeClass("can_move");
+       $(this).addClass("to");
+       $coin=null;
+      });
+      $("#b5").click(function(){
+       var $w = $("#"+$coin).clone();
+       $("#"+$coin).parent().removeClass("selected");
+       $("#"+$coin).parent().addClass("from");
+       $("#"+$coin).remove();
+       $(this).append($w);
+       $(this).removeClass("can_move");
+       $(this).addClass("to");
+       $coin=null;
+      });
+    }
+});
+</script>
+</html>
